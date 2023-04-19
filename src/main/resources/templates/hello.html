@@ -1,0 +1,13 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Hello</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+
+<!--th를 사용해서 thymeleaf문법을 사용할 수 있도록 한다. -->
+<!--controller model.addAttribute에서 key 값 'data'로 넣어준 것이 아래에서 출력된다.-->
+<p th:text="'안녕하세요. ' + ${data}" >안녕하세요. 손님</p>
+</body>
+</html>
