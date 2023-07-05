@@ -89,7 +89,9 @@ viewResolver 대신 HttpMessageConverter가 동작한다.
 
 
 <h3>회원 관리 예제</h3>
+
 ![img_4.png](images/img_4.png)
+
 ```java
 컨트롤러: 웹 MVC의 컨트롤러 역할, API 만들때 역할한다. 
 서비스: 핵심 비즈니스 로직 구현 e.g. 회원 중복 가입이 안된다.
