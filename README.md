@@ -85,3 +85,16 @@ json format으로 client에 데이터를 전달하는 방식
 viewResolver 대신 HttpMessageConverter가 동작한다.
 단순히 문자면 StringConverter, 객체면 JsonConverter가 동작한다.
 ```
+
+
+
+<h3>회원 관리 예제</h3>
+![img_4.png](images/img_4.png)
+```java
+컨트롤러: 웹 MVC의 컨트롤러 역할, API 만들때 역할한다. 
+서비스: 핵심 비즈니스 로직 구현 e.g. 회원 중복 가입이 안된다.
+리포지토리: 데이터베이스에 접근, 도메인 객체를 DB에 저장하고 관리
+도메인: 비즈니스 도메인 객체, e.g. 회원, 주문, 쿠폰 등등 주로 데이터베이스에 저장하고 관리됨
+```
+
+![img_5.png](images/img_5.png)
