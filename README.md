@@ -141,6 +141,11 @@ viewResolver 대신 HttpMessageConverter가 동작한다.
 사용해서 등록한다.
 ```
 
+<h3>스프링 DB 접근 기술</h3>
+
+![img_9.png](images/img_9.png)
+
 ```java
-sdf
+개방 폐쇄 원칙(OCP, Open-Closed Principle) : 확장에는 열려있고, 수정, 변경에는 닫혀있다.
+스프링의 DI (Dependencies Injection)을 사용하면 기존 코드를 전혀 손대지 않고, 설정만으로 구현 클래스를 변경할 수 있다.
 ```
