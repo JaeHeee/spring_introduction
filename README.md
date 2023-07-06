@@ -116,6 +116,9 @@ viewResolver 대신 HttpMessageConverter가 동작한다.
 ```java
 @Service annotation 작성해줘야 한다.
 ```
+<br>
+
+![img_8.png](images/img_8.png)
 
 <h4>스프링 빈을 등록하는 2가지 방법</h4>
 
@@ -128,4 +131,16 @@ viewResolver 대신 HttpMessageConverter가 동작한다.
 ```java
 스프링은 스프링 컨테이너에 스프링 빈을 등록할 때, 기본으로 싱글톤으로 등록한다.(유일하게 하나만 등록해서 공유한다)
 따라서 같은 스프링 빈이면 모두 같은 인스턴스다. 설정으로 싱글톤이 아니게 설정할 수 있지만, 특별한 경우를 제외하면 대부분 싱글톤을 사용한다.
+```
+
+```java
+2. 자바 코드로 직접 스프링 빈 등록하기
+
+@Configuration
+@Bean
+사용해서 등록한다.
+```
+
+```java
+sdf
 ```
