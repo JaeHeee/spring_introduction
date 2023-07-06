@@ -100,3 +100,32 @@ viewResolver 대신 HttpMessageConverter가 동작한다.
 ```
 
 ![img_5.png](images/img_5.png)
+
+
+
+<h3>스프링 빈과 의존관계</h3>
+```java
+스프링 컨테이너가 Controller annotation이 있으면 MemberController 객체를 생성해서 넣어두고 관리한다.
+스프링 컨테이너에서 스프링 빈이 관리된다고 표현한다.
+
+@Autowired : 스프링이 연관된 객체를 스프링 컨테이너에서 찾아서 넣어준다. 이렇게 객체 의존관계를 외부에서 넣어주는 것을 DI (Dependency Injection), 의존성 주입이라 한다.
+```
+
+![img_6.png](images/img_6.png)
+
+```java
+@Service annotation 작성해줘야 한다.
+```
+
+<h4>스프링 빈을 등록하는 2가지 방법</h4>
+
+```java
+1. 컴포넌트 스캔과 자동 의존관계 설정 : @Autowired, @Service, @Repository, @Controller annotation 붙이기
+```
+
+![img_7.png](images/img_7.png)
+
+```java
+스프링은 스프링 컨테이너에 스프링 빈을 등록할 때, 기본으로 싱글톤으로 등록한다.(유일하게 하나만 등록해서 공유한다)
+따라서 같은 스프링 빈이면 모두 같은 인스턴스다. 설정으로 싱글톤이 아니게 설정할 수 있지만, 특별한 경우를 제외하면 대부분 싱글톤을 사용한다.
+```
