@@ -188,3 +188,31 @@ ddl-auto : JPA는 테이블을 자동으로 생성하는 기능을 제공하는�
 ** Querydsl을 사용하면 쿼리도 자바 코드로 안전하게 작성할 수 있고, 동적 쿼리도 편리하게 작성할 수 있다.
 ** 이 조합으로 해결하기 어려운 쿼리는 JPA가 제공하는 네이티브 쿼리를 사용하거나, 스프링 JdbcTemplate를 사용하면 된다.
 ```
+
+<br>
+
+<h3>AOP</h3>
+
+![img_11.png](images/img_11.png)
+
+```java
+공통 관심 사항 : cross-cutting concern e.g. 시간측정하는 로직
+핵심 관심 사항 : core concern e.g. 회원가입 중복 확인하는 로직
+
+AOP : Aspect Orientd Programming
+- 핵심 관심 사항 과 공통 관심 사항을 분리한다.
+- 핵심 관심 사항을 깔끔하게 유지할 수 있다.
+- 변경이 필요하면 이 로직만 변경하면 된다.
+- 원하는 적용 대상을 선택할 수 있다.
+```
+
+<br>
+
+<h4>AOP 적용 전</h4>
+
+![img_12.png](images/img_12.png)
+![img_14.png](images/img_14.png)
+
+<h4>AOP 적용 후</h4>
+![img_13.png](images/img_13.png)
+![img_15.png](images/img_15.png)
